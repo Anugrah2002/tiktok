@@ -12,7 +12,7 @@ trending = api.trending(count=results, custom_verifyFp="verify_km82f9aj_jizxev2u
 for tiktok in trending:
     # Prints the id of the tiktok
     print(tiktok['id'])
-    url = api.get_Video_No_Watermark_ID(tiktok['id'], return_bytes=0)
+    print(tiktok['video']['downloadAddr'])
 
 
 print(len(trending))
