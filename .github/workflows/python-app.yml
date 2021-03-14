@@ -26,4 +26,5 @@ jobs:
         pip install TikTokApi
         python -m playwright install
     - name: tiktok
-      run: tiktok.py
+      run: |
+        python  tiktok.py
