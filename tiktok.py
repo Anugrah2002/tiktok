@@ -15,8 +15,7 @@ for tiktok in trending:
     print(tiktok['id'])
     r=api.get_Video_By_DownloadURL(tiktok['video']['downloadAddr'], language='en', proxy=None, custom_verifyFp="verify_km82f9aj_jizxev2u_XCqM_4W3N_9hVV_NrqG98hejlXY")
     with open('download.mp4', 'wb') as f:
-        for chunk in r:
-            f.write(chunk)
+        f.write(r)
     os.listdir()
     break
 
