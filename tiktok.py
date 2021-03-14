@@ -1,4 +1,5 @@
 from TikTokApi import TikTokApi
+import os
 api = TikTokApi.get_instance()
 # If playwright doesn't work for you try to use selenium
 api = TikTokApi.get_instance(use_selenium=True)
@@ -12,8 +13,13 @@ trending = api.trending(count=results, custom_verifyFp="verify_km82f9aj_jizxev2u
 for tiktok in trending:
     # Prints the id of the tiktok
     print(tiktok['id'])
-    print(tiktok['video']['downloadAddr'])
-
+    r=api.get_Video_By_DownloadURL(tiktok['video']['downloadAddr'], language='en', proxy=None, custom_verifyFp="verify_km82f9aj_jizxev2u_XCqM_4W3N_9hVV_NrqG98hejlXY")
+    if r.status_code == 200:
+        with open('download.mp4', 'wb') as f:
+            for chunk in r:
+                f.write(chunk)
+    os.listdir()
+    break
 
 print(len(trending))
 
