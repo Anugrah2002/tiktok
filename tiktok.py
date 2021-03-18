@@ -41,8 +41,10 @@ def concatenateVideoclips():
 
     for currentIndex in range(1,NUMOFVIDEOS+1):
         allClipsArray.append(VideoFileClip(r"AllVideos/video" + str(currentIndex) + '.mp4'))
+        
     
     final_clip = concatenate_videoclips(allClipsArray)
+    final_clip.resize((852,482))
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
 
     uploadfiletoheroku.uploadvideotoheroku(r'AllVideos/finalVideo.mp4')
