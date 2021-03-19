@@ -1,9 +1,9 @@
 from TikTokApi import TikTokApi
-from moviepy.editor import VideoFileClip, concatenate_videoclips,resize
+from moviepy.editor import *
 import os
 import uploadfiletoheroku
 
-NUMOFVIDEOS = 2
+NUMOFVIDEOS = 4
 
 def downloadVideos():
     api = TikTokApi.get_instance()
