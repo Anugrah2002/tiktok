@@ -44,15 +44,13 @@ def concatenateVideoclips():
         
     
     final_clip = concatenate_videoclips(allClipsArray)
-    print(final_clip)
     print('--------------------------------------')
     size=final_clip.size
     print(size)
     print('***************************************')
-    resizes=final_clip.fx( vfx.resize, width = 280)
-    print('ddddd'resizes)
+    final_clip = final_clip.resize(0.6)
+    print(final_clip.size)
 
-    
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
 
     uploadfiletoheroku.uploadvideotoheroku(r'AllVideos/finalVideo.mp4')
