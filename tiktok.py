@@ -49,7 +49,7 @@ def concatenateVideoclips():
     size=final_clip.size
     print(size)
     print('***************************************')
-    resizes=final_clip.resize(0.4)
+    resizes=final_clip.fx( vfx.resize, width = 280)
     print(resizes)
 
     
