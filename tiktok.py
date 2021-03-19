@@ -1,5 +1,5 @@
 from TikTokApi import TikTokApi
-from moviepy.editor import VideoFileClip, concatenate_videoclips
+from moviepy.editor import VideoFileClip, concatenate_videoclips,resize
 import os
 import uploadfiletoheroku
 
@@ -49,7 +49,7 @@ def concatenateVideoclips():
     size=final_clip.size
     print(size)
     print('***************************************')
-    resizes=final_clip.resize(0.6)
+    resizes=final_clip.resize(0.4)
     print(resizes)
 
     
