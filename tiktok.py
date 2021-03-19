@@ -45,6 +45,8 @@ def concatenateVideoclips():
     
     final_clip = concatenate_videoclips(allClipsArray)
     print(final_clip)
+    print(final_clip)
+    print('--------------------------------------')
     size=final_clip.size()
     print(size)
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
