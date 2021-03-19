@@ -3,7 +3,7 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips
 import os
 import uploadfiletoheroku
 
-NUMOFVIDEOS = 3
+NUMOFVIDEOS = 2
 
 def downloadVideos():
     api = TikTokApi.get_instance()
@@ -44,7 +44,7 @@ def concatenateVideoclips():
         
     
     final_clip = concatenate_videoclips(allClipsArray)
-    final_clip.resize((852,482))
+    final_clip.resize(height=360)
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
 
     uploadfiletoheroku.uploadvideotoheroku(r'AllVideos/finalVideo.mp4')
