@@ -50,7 +50,7 @@ def concatenateVideoclips():
     print(size)
     print('***************************************')
     resizes=final_clip.fx( vfx.resize, width = 280)
-    print(resizes)
+    print('ddddd'resizes)
 
     
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
