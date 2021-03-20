@@ -1,0 +1,23 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBexTA9lK-ruTMWVWEFaAzSKuIrNBjZ7vs",
+    authDomain: "tiktokvideos-378aa.firebaseapp.com",
+    projectId: "tiktokvideos-378aa",
+    storageBucket: "tiktokvideos-378aa.appspot.com",
+    messagingSenderId: "745659917761",
+    appId: "1:745659917761:web:b55d2b3ec189fd4053fb40",
+    measurementId: "G-BHVJQBQC0M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
