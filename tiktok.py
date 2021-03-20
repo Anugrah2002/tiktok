@@ -1,7 +1,7 @@
 from TikTokApi import TikTokApi
 from moviepy.editor import *
 import os
-import uploadfiletoheroku
+import uploadfiletofirebase
 
 NUMOFVIDEOS = 4
 
@@ -53,7 +53,7 @@ def concatenateVideoclips():
 
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
 
-    uploadfiletoheroku.uploadvideotoheroku(r'AllVideos/finalVideo.mp4')
+    uploadfiletofirebase.uploadvideotofirebase(r'AllVideos/finalVideo.mp4')
 
 downloadVideos()
 
