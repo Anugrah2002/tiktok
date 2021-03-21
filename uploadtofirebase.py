@@ -27,4 +27,4 @@ def uploadfiletofirebase(filepath):
   # as admin
   storage.child(filepath[:-5]+current_time+'.mp4').put(filepath)
 
-  storage.child(filepath[:-5]+current_time+'.mp4').get_url()
+  storage.child(filepath[:-5]+current_time+'.mp4').get_url(1)
