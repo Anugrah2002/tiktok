@@ -30,5 +30,6 @@ def uploadfiletofirebase(filepath):
 
   url=storage.child(filepath[:-5]+current_time+'.mp4').get_url(1)
   print(url)
+
   myurl = 'http://ytserver.eu-gb.cf.appdomain.cloud/videouploadwithcloudinary/'
   postdatas = requests.post(myurl,data={'title':'Top tiktok compilations','videoPublicId':'Tiktok firebase','videoUrl':url})
