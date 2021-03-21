@@ -39,6 +39,11 @@ jobs:
         pip install TikTokApi
         pip3 install cloudinary
         python -m playwright install
+        pip install python_jwt
+        pip install gcloud
+        pip install sseclient
+        pip install pycrypto
+        pip install requests-toolbelt
         pip install moviepy
         pip install ez_setup
     - name: tiktok
