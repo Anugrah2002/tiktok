@@ -53,7 +53,7 @@ def concatenateVideoclips():
 
     final_clip.write_videofile(r"AllVideos/finalVideo.mp4")
 
-    uploadfiletofirebase.uploadvideotofirebase(r'AllVideos/finalVideo.mp4')
+    uploadtofirebase.uploadfiletofirebase(r'AllVideos/finalVideo.mp4')
 
 downloadVideos()
 
