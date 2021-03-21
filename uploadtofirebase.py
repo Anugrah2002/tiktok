@@ -11,7 +11,7 @@ def uploadfiletofirebase(filepath):
       messagingSenderId: "745659917761",
       appId: "1:745659917761:web:b55d2b3ec189fd4053fb40",
       measurementId: "G-BHVJQBQC0M"
-    };
+    }
 
 
 

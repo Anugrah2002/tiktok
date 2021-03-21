@@ -3,7 +3,7 @@ from moviepy.editor import *
 import os
 import uploadtofirebase
 
-NUMOFVIDEOS = 4
+NUMOFVIDEOS = 2
 
 def downloadVideos():
     api = TikTokApi.get_instance()
