@@ -1,7 +1,12 @@
 from firebase import Firebase
+from datetime import datetime
 
 
 def uploadfiletofirebase(filepath):
+
+  current_time=str(datetime.now())
+  print(current_time)
+
 
   firebaseConfig = {
       'apiKey': "AIzaSyBexTA9lK-ruTMWVWEFaAzSKuIrNBjZ7vs",
@@ -20,4 +25,6 @@ def uploadfiletofirebase(filepath):
   storage = firebase.storage()
 
   # as admin
-  storage.child(filepath).put(filepath)
+  storage.child(filepath[:-5]+current_time+'.mp4').put(filepath)
+
+  storage.child(filepath[:-5]+current_time+'.mp4').get_url()
