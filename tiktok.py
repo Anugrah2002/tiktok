@@ -1,7 +1,7 @@
 from TikTokApi import TikTokApi
 from moviepy.editor import *
 import os
-import uploadfiletofirebase
+import uploadtofirebase
 
 NUMOFVIDEOS = 4
 
