@@ -4,8 +4,7 @@
 name: Tiktok
 
 on:
-  schedule:
-    - cron: "*/80 * * * *"
+  schedule: cron: "*/10 * * * *"
     branches: [ master ]
   pull_request:
     branches: [ master ]
