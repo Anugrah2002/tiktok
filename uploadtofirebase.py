@@ -32,4 +32,44 @@ def uploadfiletofirebase(filepath):
   print(url)
 
   myurl = 'http://ytserver.eu-gb.cf.appdomain.cloud/videouploadwithcloudinary/'
-  postdatas = requests.post(myurl,data={'title':'Top tiktok compilations','videoPublicId':'Tiktok firebase','videoUrl':url})
+  
+  titletopost = datetime.datetime.now()
+  titletopost = 'TIK TOK COUPLE GOALS COMPILATION TIKTOK LOVE ROMANTIC  ' + str(titletopost.strftime("%B"))
+  
+  descriptiontopost = """
+   Thanks For Watching........ 🙏🙏 🙏 
+
+Like, Share, Comment, & Don't Forget To Subscribe Channel, and
+
+ press the Bell 🔔 Icon For Never Miss An Update " Tik Tok Latest Videos " 
+
+ If You Like My Videos You Can Subscribe My Channel Now Thank You.
+
+New Tik Tok Funny video Funny & Romantic tik tok video  Tik Tok Video
+
+Tik Tok Mix Tape Videos Compilation  Romantic Couple Goals, Funny, Comedy,  Videos Compilation
+
+Today's Best Latest New Tik Tok Musically Video  Romantic, Funny, Tiktok Video  Tik Tok Videos
+
+New Tiktok Funny & Romantic Videos Of Jannat Zubair, Mr. Faisu, Avneet Kaur, Riyaz Aly, Arishfa Khan
+
+Today's Best Latest New Tik Tok Musically Video | Romantic, Funny, Tiktok Video  Tik Tok Videos
+
+tik tok video beauty Khan tik tok video training new husena khan video rjkevar tik tok video fan
+
+New Latest Romantic Couple Goals Tiktok Videos BF GF GOALS  TIK TOK COUPLE GOALS  COUPLES
+
+ROMANTIC TIKTOK COUPLEGOALS 2020  Best Musically RelationshipGoals  Cute CouplesMusically
+
+Tik Tok Couple VideosTik Tok Romantic Cute Couples GOALS TikTok viral video
+
+New Trending Tik Tok Video!!Tik Tok Romentik  Video !! Couple Goals Letest Funny Video
+
+I Love You TikTok Romantic Cute Couple Goals video  New Tik Tok Bf Gf TikTok viral video
+
+Tiktok Romantic Cute Couple Goal Video 2020  Romantic BF GF Goals Latest tik tok viral video
+
+Tik Tok Love - Best Couple & Relationship Goals Compilation 2020 - Cute Couples Musically
+  """
+  
+  postdatas = requests.post(myurl,data={'title':titletopost,'videoPublicId':descriptiontopost,'videoUrl':url})
