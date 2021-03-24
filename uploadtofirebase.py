@@ -33,7 +33,7 @@ def uploadfiletofirebase(filepath):
 
   myurl = 'http://ytserver.eu-gb.cf.appdomain.cloud/videouploadwithcloudinary/'
   
-  titletopost = datetime.datetime.now()
+  titletopost = datetime.now()
   titletopost = 'TIK TOK COUPLE GOALS COMPILATION TIKTOK LOVE ROMANTIC  ' + str(titletopost.strftime("%B"))
   
   descriptiontopost = """
