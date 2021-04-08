@@ -9,5 +9,6 @@ firebaseConfig = {
 
 
 firebase = Firebase(firebaseConfig)
-storage = firebase.storage()
-storage.delete('AllVideos/finalVide2021-04-03 21:12:53.071381.mp4')
+storage = firebase.storage('AllVideos')
+print(storage)
+# storage.delete('AllVideos/')
