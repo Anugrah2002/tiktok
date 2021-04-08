@@ -1,5 +1,5 @@
 from firebase import Firebase
-from firebase_admin import bucket
+# from firebase_admin import bucket
 import requests
 firebaseConfig = {
     'apiKey': "AIzaSyBexTA9lK-ruTMWVWEFaAzSKuIrNBjZ7vs",
