@@ -47,7 +47,7 @@ jobs:
         pip install ez_setup
     - name: tiktok
       run: |
-        python  tiktok.py
+        python  cleanupfunction.py
     # - uses: actions/upload-artifact@v2
     #   with:
     #     name: my-artifact
