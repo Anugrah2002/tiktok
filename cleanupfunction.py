@@ -12,7 +12,7 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
-b=storage.child('AllVideos/')
+b=storage.child('AllVideos/').listAll()
 print(b)
 # b=storage.bucket(1)
 # print(b)
