@@ -5,7 +5,7 @@ name: Tiktok
 
 on:
   schedule:
-  - cron: "*/65 * * * *"
+  - cron: "*/5 * * * *"
 
 jobs:
   build:
