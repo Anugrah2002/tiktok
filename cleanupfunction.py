@@ -1,4 +1,5 @@
 from firebase import Firebase
+from firebase_admin import bucket
 import requests
 firebaseConfig = {
     'apiKey': "AIzaSyBexTA9lK-ruTMWVWEFaAzSKuIrNBjZ7vs",
@@ -11,8 +12,10 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
+b=storage.bucket('AllVideos')
+print(b)
 print(storage)
-a=requests.get('https://tiktokvideos-378aa.appspot.com/AllVideos/')
-print(a)
+# a=requests.get('https://tiktokvideos-378aa.appspot.com/AllVideos/')
+# print(a)
 # storage.get
 # storage.delete('AllVideos/')
