@@ -9,6 +9,7 @@ firebaseConfig = {
 
 
 firebase = Firebase(firebaseConfig)
-storage = firebase.storage('AllVideos/')
+storage = firebase.storage()
 print(storage)
+# storage.get
 # storage.delete('AllVideos/')
