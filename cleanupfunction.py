@@ -12,7 +12,11 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
-b=storage.child('AllVideos/').list_files('AllVideos/')
+b=storage.child('AllVideos/').list_files()
+for i in b:
+    c=b[i]
+    print(c)
+
 print(b)
 # b=storage.bucket(1)
 # print(b)
