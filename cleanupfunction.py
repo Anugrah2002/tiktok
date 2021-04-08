@@ -12,7 +12,9 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
-b=storage.bucket('AllVideos')
+b=storage.bucket()
+print(b)
+b=storage.bucket(1)
 print(b)
 print(storage)
 # a=requests.get('https://tiktokvideos-378aa.appspot.com/AllVideos/')
