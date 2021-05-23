@@ -31,8 +31,9 @@ def uploadfiletofirebase(filepath):
   storage.child(filepath[:-5]+current_time+'.mp4').put(filepath)
   url=storage.child(filepath[:-5]+current_time+'.mp4').get_url(1)
   print(url)
+  nameofVideo=filepath[:-5]+current_time+'.mp4'
 
-  myurl = 'http://ytserver.eu-gb.cf.appdomain.cloud/videouploadwithcloudinary/'
+  myurl = 'http://ytserver.eu-gb.cf.appdomain.cloud/news/videouploadwithcloudinary/'
   
   titletopost = datetime.now()
   titletopost = 'TIK TOK COUPLE GOALS COMPILATION TIKTOK LOVE ROMANTIC  ' + str(titletopost.strftime("%B"))
@@ -73,4 +74,4 @@ Tiktok Romantic Cute Couple Goal Video 2020  Romantic BF GF Goals Latest tik tok
 Tik Tok Love - Best Couple & Relationship Goals Compilation 2020 - Cute Couples Musically
   """
   
-  postdatas = requests.post(myurl,data={'title':titletopost,'videoPublicId':descriptiontopost,'videoUrl':url})
+  postdatas = requests.post(myurl,data={'title':titletopost,'videoPublicId':descriptiontopost,'videoUrl':url,'name':nameofVideo})
