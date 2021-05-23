@@ -15,6 +15,7 @@ def uploadfiletofirebase(filepath):
       'authDomain': "tiktokvideos-378aa.firebaseapp.com",
       'storageBucket': "tiktokvideos-378aa.appspot.com",
       "databaseURL": "https://tiktokvideos-378aa-default-rtdb.firebaseio.com/",
+      "serviceAccount": "./service_account.json"
     }
 
 
