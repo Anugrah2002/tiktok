@@ -27,6 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install firebase
+        pip install firebase-admin
         sudo apt-get install libegl1\
             libopus0\
             libwoff1\
@@ -51,6 +52,7 @@ jobs:
         pip install requests-toolbelt
         pip install moviepy
         pip install ez_setup
+        
     - name: tiktok
       run: |
         python  cleanupfunction.py
