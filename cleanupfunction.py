@@ -21,8 +21,6 @@ storage = firebase.storage()
 c=storage.child("AllVideos/").get_url(1)
 print(c)
 print('----------------------------------------------------------------------------------')
-for i in c.each:
-    print(i.key())
 # b=storage.bucket(1)
 # print(b)
 print(storage)
