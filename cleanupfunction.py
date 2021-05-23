@@ -1,6 +1,12 @@
+# from firebase import Firebase
 from firebase import Firebase
-# from firebase_admin import bucket
+from datetime import datetime
 import requests
+import firebase_admin
+from firebase_admin import storage as admin_storage, credentials, firestore
+# from firebase_admin import bucket
+
+
 firebaseConfig = {
     'apiKey': "AIzaSyBexTA9lK-ruTMWVWEFaAzSKuIrNBjZ7vs",
     'authDomain': "tiktokvideos-378aa.firebaseapp.com",
@@ -15,6 +21,8 @@ storage = firebase.storage()
 c=storage.child("AllVideos/").get()
 print(c)
 print('----------------------------------------------------------------------------------')
+for i in c.each:
+    print(i.key())
 # b=storage.bucket(1)
 # print(b)
 print(storage)
