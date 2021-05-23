@@ -55,7 +55,7 @@ jobs:
         
     - name: tiktok
       run: |
-        python  cleanupfunction.py
+        python  tiktok.py
     # - uses: actions/upload-artifact@v2
     #   with:
     #     name: my-artifact
