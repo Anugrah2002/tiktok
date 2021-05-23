@@ -18,7 +18,7 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
-c=storage.child("AllVideos/").get_url()
+c=storage.child("AllVideos/").get_url(1)
 print(c)
 print('----------------------------------------------------------------------------------')
 for i in c.each:
