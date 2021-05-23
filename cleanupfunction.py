@@ -18,12 +18,16 @@ firebaseConfig = {
 
 firebase = Firebase(firebaseConfig)
 storage = firebase.storage()
-c=storage.child("AllVideos/").get_url(1)
-print(c)
-print('----------------------------------------------------------------------------------')
-# b=storage.bucket(1)
-# print(b)
-print(storage)
+a=admin_storage.bucket()
+blob=a.blob('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
+blob.delete()
+
+# c=storage.child("AllVideos/").val()
+# print(c)
+# print('----------------------------------------------------------------------------------')
+# # b=storage.bucket(1)
+# # print(b)
+# print(storage)
 # a=requests.get('https://tiktokvideos-378aa.appspot.com/AllVideos/')
 # print(a)
 # storage.get
