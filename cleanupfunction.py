@@ -17,10 +17,8 @@ firebaseConfig = {
 
 
 firebase = Firebase(firebaseConfig)
-storage = firebase.storage()
-a=admin_storage.bucket()
-blob=a.blob('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
-blob.delete()
+storage=firebase.storage()
+storage.delete('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
 
 # c=storage.child("AllVideos/").val()
 # print(c)
