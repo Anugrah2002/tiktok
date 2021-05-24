@@ -27,6 +27,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install firebase
+        pip install httplib2
+        pip install google-api-python-client
         pip install firebase-admin
         sudo apt-get install libegl1\
             libopus0\
