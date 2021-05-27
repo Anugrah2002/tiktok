@@ -21,8 +21,11 @@ storage=firebase.storage()
 
 data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
 
+print(data)
+
 di = json.loads(data)
 s=json.dumps(di)
+print(s)
 for i in s:
     a=re.search('17',i['nameofvideo'])
     if a:
