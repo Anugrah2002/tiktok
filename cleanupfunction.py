@@ -16,22 +16,18 @@ firebaseConfig = {
     "serviceAccount": "./service_account.json",
 }
 
+firebase = Firebase(firebaseConfig)
+storage=firebase.storage()
 
 data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
 
-di = json.loads(data.text)
-stri=json.dumps(di)
-print(stri)
-print(type(stri))
-d=re.search('17',stri)
-for i in d:
-    if d:
-        print(d)
+di = json.loads(data)
+for i in di:
+    a=re.search('17',i['nameofvido'])
+    if a:
+        print(a)
     else:
         print('no')
-
-firebase = Firebase(firebaseConfig)
-storage=firebase.storage()
 # storage.delete('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
 
 # c=storage.child("AllVideos/").val()
