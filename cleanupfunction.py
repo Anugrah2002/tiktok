@@ -1,7 +1,7 @@
 # from firebase import Firebase
 from firebase import Firebase
 from datetime import datetime
-import requests
+import requests, json
 import firebase_admin
 from firebase_admin import storage as admin_storage, credentials, firestore
 # from firebase_admin import bucket
@@ -15,6 +15,11 @@ firebaseConfig = {
     "serviceAccount": "./service_account.json",
 }
 
+
+data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
+
+nameofvideo=(data.json()['nameofvideo'])
+print(nameofvideo)
 
 firebase = Firebase(firebaseConfig)
 storage=firebase.storage()
