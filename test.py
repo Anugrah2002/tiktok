@@ -1,6 +1,7 @@
 import json
 import re
 import requests
+import datetime
 
 
 
@@ -9,8 +10,21 @@ data=data.json()
 
 for i in data:
     data=i['nameofvideo']
-    excluding=re.search('17',data)
+    NextDay_Date = datetime.datetime.today() + datetime.timedelta(days=1)
+    formatted= NextDay_Date.strftime("%y-%m-%d")
+    excluding=re.search(formatted,data)
     if excluding:
         print(data)
-    else:
-        print('no')
+
+
+
+
+# from datetime import datetime
+
+# now = datetime.now()
+
+# current_time = now.strftime("%H-%M-%S")
+# print("Current Time =", current_time)
+
+
+# print (formatted)

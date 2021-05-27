@@ -24,22 +24,11 @@ data=data.json()
 
 for i in data:
     data=i['nameofvideo']
+    # NextDay_Date = datetime.datetime.today() - datetime.timedelta(days=2)
+    # formatted= NextDay_Date.strftime("%y-%m-%d")
     excluding=re.search('17',data)
     if excluding:
         print(data)
         storage.delete(data)
-    else:
-        print('no')
-    
-# storage.delete('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
 
-# c=storage.child("AllVideos/").val()
-# print(c)
-# print('----------------------------------------------------------------------------------')
-# # b=storage.bucket(1)
-# # print(b)
-# print(storage)
-# a=requests.get('https://tiktokvideos-378aa.appspot.com/AllVideos/')
-# print(a)
-# storage.get
-# storage.delete('AllVideos/')
+    
