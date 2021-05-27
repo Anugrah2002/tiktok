@@ -27,7 +27,7 @@ for i in data:
     excluding=re.search('17',data)
     if excluding:
         print(data)
-        storage.delete('AllVideos/'+data)
+        storage.delete(data)
     else:
         print('no')
     
