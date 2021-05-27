@@ -23,15 +23,10 @@ data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
 
 print(data)
 
-di = json.loads(data)
+di = json.load(data)
+print(di)
 s=json.dumps(di)
 print(s)
-for i in s:
-    a=re.search('17',i['nameofvideo'])
-    if a:
-        print(a)
-    else:
-        print('no')
 # storage.delete('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
 
 # c=storage.child("AllVideos/").val()
