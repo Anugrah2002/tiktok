@@ -22,7 +22,7 @@ storage=firebase.storage()
 data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
 data=data.json()
 
-for i in data.items():
+for i in data():
     print(i)
     
 # storage.delete('Farmers_Increase_Income_By_Adopting_Animal_Husbandry_Etawha_News_Knp615834078_hd.mp4')
