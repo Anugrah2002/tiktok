@@ -2,6 +2,7 @@
 from firebase import Firebase
 from datetime import datetime
 import requests, json
+import re
 import firebase_admin
 from firebase_admin import storage as admin_storage, credentials, firestore
 # from firebase_admin import bucket
@@ -22,6 +23,12 @@ di = json.loads(data.text)
 stri=json.dumps(di)
 print(stri)
 print(type(stri))
+d=re.search('17',stri)
+for i in d:
+    if d:
+        print(d)
+    else:
+        print('no')
 
 firebase = Firebase(firebaseConfig)
 storage=firebase.storage()
