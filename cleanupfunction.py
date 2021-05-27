@@ -18,8 +18,9 @@ firebaseConfig = {
 
 data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
 
-nameofvideo=(data.json()['nameofvideo'])
-print(nameofvideo)
+di = json.loads(data.text)
+stri=json.dumps(di)
+print(stri)
 
 firebase = Firebase(firebaseConfig)
 storage=firebase.storage()
