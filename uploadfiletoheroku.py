@@ -1,3 +1,6 @@
+# This file is of no use in  this whole project
+ 
+
 # from django.http import HttpResponse, JsonResponse
 import requests
 import cloudinary

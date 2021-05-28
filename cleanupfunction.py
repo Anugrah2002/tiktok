@@ -19,7 +19,7 @@ firebaseConfig = {
 firebase = Firebase(firebaseConfig)
 storage=firebase.storage()
 
-data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/clean/')
+data=requests.get('http://ytserver.eu-gb.cf.appdomain.cloud/entertain/clean/')
 data=data.json()
 
 for i in data:
